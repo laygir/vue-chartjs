@@ -79,11 +79,12 @@ export function generateChart (chartId, chartType) {
         )
       }
     },
-//     beforeDestroy () {
+    beforeDestroy () {
+      console.log('beforeDestroy of BaseCharts.js');
 //       if (this.$data._chart) {
 //         this.$data._chart.destroy()
 //       }
-//     }
+    }
   }
 }
 
