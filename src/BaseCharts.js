@@ -81,9 +81,9 @@ export function generateChart (chartId, chartType) {
     },
     destroyed () {
       console.log('destroyed hook of BaseCharts.js');
-//       if (this.$data._chart) {
-//         this.$data._chart.destroy()
-//       }
+      if (this.$data._chart) {
+        this.$data._chart.destroy()
+      }
     }
   }
 }
