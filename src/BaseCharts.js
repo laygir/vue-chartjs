@@ -79,11 +79,12 @@ export function generateChart (chartId, chartType) {
         )
       }
     },
-//     beforeDestroy () {
-//       if (this.$data._chart) {
-//         this.$data._chart.destroy()
-//       }
-//     }
+    destroyed () {
+      console.log('destroyed hook of BaseCharts.js');
+      if (this.$data._chart) {
+        this.$data._chart.destroy()
+      }
+    }
   }
 }
 
